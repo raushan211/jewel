@@ -14,7 +14,7 @@ func main() {
 }
 
 func setupRoutes(r *gin.Engine) {
-	r.GET("/jewel:jewels/stone/:stones", Dummy)
+	r.GET("/jewels/:jewels/stone/:stones", dummy)
 }
 func dummy(c *gin.Context) {
 	var jewels, err1 = c.Params.Get("jewels")
