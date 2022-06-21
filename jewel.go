@@ -30,7 +30,7 @@ func dummy(c *gin.Context) {
 
 	if err2 == false {
 		res := gin.H{
-			"stones": "jewels is missing",
+			"error": "stones is missing",
 		}
 		c.JSON(http.StatusOK, res)
 		return
